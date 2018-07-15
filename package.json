@@ -1,0 +1,35 @@
+{
+  "name": "notifier",
+  "version": "1.0.0",
+  "description": "Notifier",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.6.1",
+    "config": "^1.30.0",
+    "express": "^4.16.3",
+    "helmet": "^3.12.1",
+    "moment": "^2.22.2",
+    "request": "^2.87.0",
+    "sense-hat-led": "^1.0.1",
+    "sense-joystick": "0.0.3",
+    "winston": "^3.0.0",
+    "winston-daily-rotate-file": "^3.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/normankong/notifier.git"
+  },
+  "keywords": [
+    "Notifier"
+  ],
+  "author": "Norman Kong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/normankong/notifier/issues"
+  },
+  "homepage": "https://github.com/normankong/notifier#readme"
+}

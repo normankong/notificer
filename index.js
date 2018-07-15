@@ -1,6 +1,7 @@
 // Sense Hat Module
 var sense = require("sense-hat-led");
 var senseJoystick = require('sense-joystick');
+var config = require('config');
 
 // Log Module
 var winston = require('winston');
@@ -20,9 +21,10 @@ var APP_NAME = "Notifier";
 var LOG_LABEL = "notifier";
 var LOG_FILE = 'logs/notifier-%DATE%.log';
 var HTTP_PORT = 8888;
+var CHECK_URL = config.get('CheckSite.URL');
 
 var options = {
-    url: 'http://vctpi.kkkong.cpeg.net:8088/mailjson',
+    url: CHECK_URL,
     headers: {
         'User-Agent': 'request'
     }
