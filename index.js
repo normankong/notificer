@@ -68,6 +68,9 @@ function checkURL(callback) {
             // Callback
             if (callback) callback();
         }
+        else{
+            logger.error("Error in loading URL" + error);
+        }
     });
 }
 
@@ -295,6 +298,7 @@ function triggerRefresh(callback) {
     {
         logger.info("Trigger checking by manual");
         clearInterval(interval);
+        interval = null;
         checkURL(callback);
     } else {
         logger.info("Notifier is running");
